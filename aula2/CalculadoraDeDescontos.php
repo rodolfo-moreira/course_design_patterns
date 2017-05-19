@@ -1,9 +1,9 @@
 <?php
 	class CalculadoraDeDescontos{
 
-		public function calcula(Orcamento $Orcamento){
+		public function desconto(Orcamento $Orcamento){
 
-			if(count($Orcamento->getItens()) > 5{
+			if(count($Orcamento->getItens()) >= 5){
 
 				return $Orcamento->getValor() * 0.1;
 
