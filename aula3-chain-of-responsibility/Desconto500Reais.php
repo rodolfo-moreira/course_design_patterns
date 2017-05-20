@@ -1,13 +1,13 @@
 <?php
-    class Desconto5Itens{
+    class Desconto500Reais{
 
         private $proximoDesconto;
 
-        public function desconto(Orcamento $Orcamento){
+        public function deconto(Orcamento $Orcamento){
 
-            if(count($Orcamento->getItens()) >= 5){
+            if($Orcamento->getValor() > 500){
 
-                return $Orcamento->getValor() * 0.1;
+                return $Orcamento->getValor() * 0.05;
 
             }else{
 

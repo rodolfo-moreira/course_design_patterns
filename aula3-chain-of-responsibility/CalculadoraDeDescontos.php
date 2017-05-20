@@ -1,21 +1,16 @@
 <?php
+
+    require "Desconto5Itens.php";
+    require "Desconto500Reais.php";
+
 	class CalculadoraDeDescontos{
 
 		public function desconto(Orcamento $Orcamento){
+            $desconto5Itens = new Desconto5Itens();
+            $desconto500Reais = new Desconto500Reais();
 
-			if(count($Orcamento->getItens()) >= 5){
-
-				return $Orcamento->getValor() * 0.1;
-
-			}else if($Orcamento->getValor() > 500){
-
-				return $Orcamento->getValor() * 0.05;
-
-			}else{
-
-				return 0;
-				
-			}
+            $desconto5Itens->setProximo($desconto500Reais);
+			//$valorDesconto =
 		
 		}
 
