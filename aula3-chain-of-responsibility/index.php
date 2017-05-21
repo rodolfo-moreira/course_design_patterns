@@ -1,6 +1,11 @@
 <?php
 
 	require "Orcamento.php";
+    require "Desconto.php";
+    require "Desconto5Itens.php";
+    require "Desconto500Reais.php";
+    require "Desconto300Reais.php";
+    require "SemDesconto.php";
     require "Item.php";
 	require "CalculadoraDeImpostos.php";
     require "CalculadoraDeDescontos.php";
@@ -9,7 +14,7 @@
 	require "ISS.php";
 	require "KCV.php";
 	
-	$reforma = new Orcamento(300);
+	$reforma = new Orcamento(301);
 
 	$calculadora = new CalculadoraDeImpostos();
 
@@ -41,7 +46,6 @@
 
     $reforma->addItem(new Item("Cimento 1kg", 250));
 
-    $reforma->addItem(new Item("Cimento 1kg", 250));
     $reforma->addItem(new Item("Cimento 1kg", 250));
     $reforma->addItem(new Item("Cimento 1kg", 250));
 

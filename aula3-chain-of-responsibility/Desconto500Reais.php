@@ -1,9 +1,10 @@
 <?php
-    class Desconto500Reais{
+
+    class Desconto500Reais implements Desconto {
 
         private $proximoDesconto;
 
-        public function deconto(Orcamento $Orcamento){
+        public function desconto(Orcamento $Orcamento){
 
             if($Orcamento->getValor() > 500){
 

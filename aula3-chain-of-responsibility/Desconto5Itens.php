@@ -1,5 +1,5 @@
 <?php
-    class Desconto5Itens{
+    class Desconto5Itens implements Desconto{
 
         private $proximoDesconto;
 
