@@ -1,0 +1,3 @@
+Chain of responsibility
+
+Basicamente seria separar as responsabilidades por classes e depois através de um controlador invocá-las, evitando de utiliar diversos ifs na classe.

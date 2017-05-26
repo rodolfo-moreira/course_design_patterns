@@ -1,0 +1,3 @@
+Strategy
+
+O padrão de projeto Strategy encapsula os metodos e cria um tunel entre sua execução e sua estrutura, fazendo de um jeito que nossa classe fique flexivel, independente dos metodos encapsulados.
