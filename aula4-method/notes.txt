@@ -1,0 +1,3 @@
+Method
+
+Quando criamos um template para o nosso algoritmo.
